@@ -1,0 +1,57 @@
+{
+	"compilerOptions": {
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"verbatimModuleSyntax": true,
+		"useDefineForClassFields": true,
+		"experimentalDecorators": true,
+		"removeComments": true,
+		"pretty": true,
+		"alwaysStrict": true,
+		"allowJs": true,
+		"strict": true,
+		"sourceMap": true,
+		"jsx": "preserve",
+		"declaration": false,
+		"declarationMap": false,
+		"forceConsistentCasingInFileNames": true,
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"ES2020"
+		],
+		"baseUrl": "../",
+		"paths": {
+			"$lib": [
+				"./src/lib/+.ts"
+			],
+			"$data": [
+				"./src/data/+.ts"
+			]
+		},
+		"outDir": "../build/static/js/",
+		"target": "es2020",
+		"module": "ES2020",
+		"moduleResolution": "bundler",
+		"strictFunctionTypes": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"types": [
+			"vitest/globals"
+		]
+	},
+	"include": [
+		"../src/**/*.ts"
+	],
+	"exclude": [
+		"../build",
+		"../node_modules",
+		"../vendor",
+		"../src/**/*.test.ts"
+	]
+}
