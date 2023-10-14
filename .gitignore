@@ -1,0 +1,13 @@
+.idea/
+.env.*
+.config.*.json
+out/
+build/
+vendor/
+
+
+
+data/logs/
+**/testdata/fuzz/**
+
+node_modules
